@@ -6,9 +6,8 @@ image: /images/crv19.png
 categories: research
 author: "Usman Anwar"
 authors: "<strong>Usman Anwar</strong>, Shehryar Malik, Alireza Aghasi, Ali Ahmed"
-venue: "Computer and Robot Vision Conference"
+venue: "ICML 2021"
 arxiv: https://arxiv.org/abs/1904.05537
-slides: /pdfs/crv19-slides.pdf
 code: https://github.com/leonidk/direct_gmm
 ---
 
