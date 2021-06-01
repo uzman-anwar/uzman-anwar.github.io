@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Inverse Constrained Reinforcement Learning"
+date:   2021-06-01 14:30:00 +00:00
+image: /images/gina-motes.jpg
+categories: research
+author: "Usman Anwar"
+authors" <strong>Usman Anwar</strong>\*, Shehryar Malik\*, Alireza Aghasi, Ali Ahmed
+arxiv: https://arxiv.org/abs/2011.09999
+subtitle: "A method to learn constraints from demonstrations to promote safety of embodied agents."
+venue: "ICML 2021"
+code: https://github.com/shehryar-malik/icrl
+---
+
+We proposed a framework for learning *Markovian* constrains from user demonstrations in high dimensional, continuous settings. We empirically show that constraints thus learned are general and transfer well to agents with different dynamics and morphologies. 

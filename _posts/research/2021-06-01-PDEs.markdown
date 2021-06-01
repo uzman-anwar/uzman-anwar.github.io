@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Learning To Solve Differential Equations Across Initial Conditions"
+date:   2021-06-01 14:45:00 +00:00
+image: /images/gina-motes.jpg
+categories: research
+author: "Usman Anwar"
+authors" <strong>Usman Anwar</strong>\*, Shehryar Malik\*, Alireza Aghasi, Ali Ahmed
+arxiv: https://arxiv.org/abs/2003.12159
+venue: "DeepDiffEq Workshop at ICLR 2020"
+---
+
+We extend the PINN's framework for finding the solution of a Partial Differential Equation to work across initial conditions by casting the problem as a generative model and using an info-GAN like architecture.
