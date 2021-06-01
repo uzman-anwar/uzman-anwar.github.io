@@ -6,7 +6,7 @@ image: /images/icrl.jpg
 categories: research
 author: "Usman Anwar"
 authors: "<strong>Usman Anwar</strong>, Shehryar Malik, Alireza Aghasi, Ali Ahmed"
-venue: "ICML 2021"
+venue: "Internation Conference On Machine Learning"
 arxiv: https://arxiv.org/abs/2011.09999
 code: https://github.com/shehryar-malik/icrl
 ---
