@@ -5,7 +5,7 @@ date:   2019-05-29 22:21:59 +00:00
 image: /images/crv19.png
 categories: research
 author: "Usman Anwar"
-authors: "<strong>Leonid Keselman</strong>, Martial Hebert"
+authors: "<strong>Usman Anwar</strong>, Shehryar Malik, Alireza Aghasi, Ali Ahmed"
 venue: "Computer and Robot Vision Conference"
 arxiv: https://arxiv.org/abs/1904.05537
 slides: /pdfs/crv19-slides.pdf
