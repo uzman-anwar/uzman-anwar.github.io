@@ -5,7 +5,7 @@ date:   2021-06-01 14:45:00 +00:00
 image: /images/gina-motes.jpg
 categories: research
 author: "Usman Anwar"
-authors" <strong>Usman Anwar</strong>\*, Shehryar Malik\*, Alireza Aghasi, Ali Ahmed
+authors: "<strong>Usman Anwar</strong>\*, Shehryar Malik\*, Alireza Aghasi, Ali Ahmed"
 arxiv: https://arxiv.org/abs/2003.12159
 venue: "DeepDiffEq Workshop at ICLR 2020"
 ---
