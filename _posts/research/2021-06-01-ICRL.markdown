@@ -4,7 +4,7 @@ title:  "Inverse Constrained Reinforcement Learning"
 date:   2021-06-01 14:30:00 +00:00
 image: /images/gina-motes.jpg
 categories: research
-author: "Usman Anwar"
+author: "Leo Keselman"
 authors:" <strong>Usman Anwar</strong>, Shehryar Malik, Alireza Aghasi, Ali Ahmed"
 venue: "ICML 2021"
 arxiv: https://arxiv.org/abs/2011.09999
