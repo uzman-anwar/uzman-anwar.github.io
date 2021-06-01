@@ -4,7 +4,7 @@ title:  "Inverse Constrained Reinforcement Learning"
 date:   2019-05-29 22:21:59 +00:00
 image: /images/crv19.png
 categories: research
-author: "Leo Keselman"
+author: "Usman Anwar"
 authors: "<strong>Leonid Keselman</strong>, Martial Hebert"
 venue: "Computer and Robot Vision Conference"
 arxiv: https://arxiv.org/abs/1904.05537
