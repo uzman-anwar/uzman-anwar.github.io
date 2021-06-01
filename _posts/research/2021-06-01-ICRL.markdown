@@ -11,4 +11,4 @@ arxiv: https://arxiv.org/abs/2011.09999
 code: https://github.com/shehryar-malik/icrl
 ---
 
-We proposed a framework for learning Markovian constrains from user demonstrations in high dimensional, continuous settings. We empirically show that constraints thus learned are general and transfer well to agents with different dynamics and morphologies. 
+We propose a framework for learning Markovian constraints from user demonstrations in high dimensional, continuous settings. We empirically show that constraints thus learned are general and transfer well to agents with different dynamics and morphologies. 
