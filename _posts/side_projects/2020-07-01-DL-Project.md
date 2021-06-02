@@ -2,7 +2,7 @@
 layout: post
 title:  "Imitation Learning On Atari Games"
 date:   2020-07-01 14:30:00
-image: /projects/poster.png
+image: /images/icrl.png
 categories: side-project
 author: "Usman Anwar"
 authors: "<strong>Usman Anwar</strong>, Shehryar Malik, Alireza Aghasi, Ali Ahmed"
