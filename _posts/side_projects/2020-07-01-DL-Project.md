@@ -14,4 +14,4 @@ video2: https://www.youtube.com/watch?v=P1BICZbX25U
 subtitle: Course project for Deep Learning at ITU.
 ---
 
-Course project for deep learning course taught at ITU.
+We used generative adversarial imitation learning to attain competitive performance on two Atari games: Pong and Breakout.
