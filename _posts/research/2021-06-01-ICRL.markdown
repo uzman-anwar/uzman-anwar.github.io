@@ -2,13 +2,13 @@
 layout: post
 title:  "Inverse Constrained Reinforcement Learning"
 date:   2021-05-31 14:30:00
-image: /images/icrl.png
+image: /ICRL/image.png
 categories: research
 author: "Usman Anwar"
 authors: "<strong>Usman Anwar</strong>, Shehryar Malik, Alireza Aghasi, Ali Ahmed"
-venue: "Internation Conference On Machine Learning"
+venue: "Internation Conference on Machine Learning"
 arxiv: https://arxiv.org/abs/2011.09999
-slides: /pdfs/slides/icrl_slides.pdf
+slides: /papers/ICRL/slides.pdf
 code: https://github.com/shehryar-malik/icrl
 ---
 
