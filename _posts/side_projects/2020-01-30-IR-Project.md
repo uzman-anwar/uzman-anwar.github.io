@@ -2,7 +2,7 @@
 layout: post
 title:  "Paper Discovery Via Topic Modelling"
 date:   2020-01-30 14:30:00
-image: "/projects/Paper_Discovery/poster.png"
+image: "/projects/Paper_Discovery/image.png"
 categories: side-project
 author: "Usman Anwar"
 slides: /projects/Paper_Discovery/slides.pdf
