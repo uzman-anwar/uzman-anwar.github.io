@@ -99,16 +99,14 @@
           {% endfor %}
           {% endfor %}
         </table>
-<!--        <br>
-        <br>
-	<br> -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        
+	
+       <h2>Other Projects</h2>
+	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
        <br>
-        <br>
-        <br>
-        <h2>Other Projects</h2>
+        
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
@@ -137,16 +135,10 @@
               {% if post.website %}
               <a href="{{post.website}}">website</a> /
               {% endif %}
-              {% if post.paper %}
+              {% if post.report %}
               <a href="{{post.report}}">report</a> /
               {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.video2 %}
-              <a href="{{post.video2}}">video #2</a> /
-              {% endif %}
-              {% if post.code %}
+             {% if post.code %}
               <a href="{{post.code}}">code</a> /
               {% endif %}
               {% if post.poster %}
@@ -154,6 +146,12 @@
               {% endif %}
               {% if post.slides %}
               <a href="{{post.slides}}">slides</a> /
+              {% endif %}
+              {% if post.video %}
+              <a href="{{post.video}}">video</a> /
+              {% endif %}
+              {% if post.video2 %}
+              <a href="{{post.video2}}">video #2</a> /
               {% endif %}
               <p></p>
               {{ post.excerpt }}
