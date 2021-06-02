@@ -7,7 +7,7 @@ categories: side-project
 author: "Usman Anwar"
 authors: "<strong>Usman Anwar</strong>, Shehryar Malik, Alireza Aghasi, Ali Ahmed"
 slides: /projects/IL_Atari/slides.pdf
-poster: /projects/IL_Atari/poster.pdf
+poster: /projects/IL_Atari/poster.png
 report: /projects/IL_Atari/report.pdf
 video: https://www.youtube.com/watch?v=UgKxI8EfBf4
 video2: https://www.youtube.com/watch?v=P1BICZbX25U
