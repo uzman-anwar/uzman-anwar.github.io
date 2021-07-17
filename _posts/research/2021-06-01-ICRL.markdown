@@ -10,6 +10,7 @@ venue: "Internation Conference on Machine Learning"
 arxiv: https://arxiv.org/abs/2011.09999
 slides: /papers/ICRL/slides.pdf
 poster: /papers/ICRL/poster.pdf
+video: https://youtu.be/dHnzSViK7II
 code: https://github.com/shehryar-malik/icrl
 ---
 
