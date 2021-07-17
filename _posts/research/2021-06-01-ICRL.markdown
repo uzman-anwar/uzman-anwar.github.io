@@ -9,6 +9,7 @@ authors: "<strong>Usman Anwar</strong>, Shehryar Malik, Alireza Aghasi, Ali Ahme
 venue: "Internation Conference on Machine Learning"
 arxiv: https://arxiv.org/abs/2011.09999
 slides: /papers/ICRL/slides.pdf
+poster: /papers/ICRL/poster.pdf
 code: https://github.com/shehryar-malik/icrl
 ---
 
