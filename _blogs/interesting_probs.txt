@@ -1,0 +1,7 @@
+1. Invention of large scale storage systems
+Wind and solar are non-persistent sources of energy; in such a case, it is paramount to have efficient storage systems to store any surplus energy produced for later use. But how to do?
+Readings:
+	(a) https://www.vox.com/energy-and-environment/2019/8/9/20767886/renewable-energy-storage-cost-electricity
+	(b) https://twitter.com/ylecun/status/1359590575125770245
+
+
