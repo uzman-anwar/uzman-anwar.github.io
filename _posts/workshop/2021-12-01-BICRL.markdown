@@ -10,6 +10,6 @@ paper: /papers/BICRL/paper.pdf
 poster: /papers/BICRL/poster.png
 #arxiv: https://arxiv.org/abs/2003.12159
 #slides: /papers/PDE-GAN/slides.pdf
-venue: "NeurIPS 2021 Workshop on Safe and Robust Control of Uncertain Systems, 2021"
+venue: "NeurIPS 2021 Workshop on Safe and Robust Control of Uncertain Systems"
 ---
 We develop a Bayesian approach for learning constraints which provides several advantages as it can work with partial trajectories, is applicable in both stochastic and deterministic environments and due to its ability to provide a posterior distribution enables use of active learning for accurate learning of constraints.
