@@ -1,15 +1,14 @@
 ---
 layout: post
-title:  "Bayesian Inverse Constrained Reinforcement Learning"
-date:   2021-12-01 14:45:00
+title: "Bayesian Methods for Constraint Inference in Reinforcement Learning"
+date:   2022-11-28 14:45:00
 image: /papers/BICRL/image.png
-categories: workshop
+categories: conference
 author: "Usman Anwar"
 authors: "Dimitris Papadimitriou, <strong>Usman Anwar</strong>, Daniel Brown"
 paper: /papers/BICRL/paper.pdf
 poster: /papers/BICRL/poster.png
 #arxiv: https://arxiv.org/abs/2003.12159
-#slides: /papers/PDE-GAN/slides.pdf
-venue: "NeurIPS 2021 Workshop on Safe and Robust Control of Uncertain Systems"
+venue: "Transactions on Machine Learning Research"
 ---
 We develop a Bayesian approach for learning constraints which provides several advantages as it can work with partial trajectories, is applicable in both stochastic and deterministic environments and due to its ability to provide a posterior distribution enables use of active learning for accurate learning of constraints.
