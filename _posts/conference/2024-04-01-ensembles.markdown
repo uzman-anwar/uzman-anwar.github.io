@@ -2,7 +2,7 @@
 layout: post
 title:  "Reward Model Ensembles Help Mitigate Overoptimization"
 date:   2024-04-01 14:30:00
-image: /papers/RM-ensembles/overoptimization.png
+image: /papers/RM-Ensembles/overoptimization.png
 categories: conference
 author: "Usman Anwar"
 authors: "Thomas Coste, <strong>Usman Anwar</strong>, Robert Kirk, David Krueger"
