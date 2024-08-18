@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Foundational Challenges in Assuring Alignment and Safety of Large Language Models"
-date:   2024-15-04 14:30:00
+date:   2024-04-15 14:30:00
 image: /papers/LLM-Agenda/shoggath.png
 categories: conference
 author: "Usman Anwar"
