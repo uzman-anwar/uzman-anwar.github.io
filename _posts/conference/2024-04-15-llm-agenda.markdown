@@ -6,7 +6,7 @@ image: /papers/LLM-Agenda/shoggath.png
 categories: conference
 author: "Usman Anwar"
 authors: "<strong>Usman Anwar</strong> and 41 other authors"
-venue: "Under Submission"
+venue: "Transactions on Machine Learning Research (Survey Certification)"
 arxiv: https://arxiv.org/abs/2404.09932
 website: https://llm-safety-challenges.github.io/
 tweetprint: https://x.com/usmananwar391/status/1780254437895713011
