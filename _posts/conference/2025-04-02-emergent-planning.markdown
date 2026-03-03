@@ -2,7 +2,7 @@
 layout: post
 title: "Interpreting Emergent Planning in Model-Free Reinforcement Learning"
 date:   2025-04-02 14:30:00
-image: /images/profile_photo_cropped.png
+image: /images/404.jpg
 categories: conference
 author: "Usman Anwar"
 authors: "<strong>Usman Anwar*</strong>, Thomas Bush*, Stephen Chung, Adria Garriga-Alonso, David Krueger"

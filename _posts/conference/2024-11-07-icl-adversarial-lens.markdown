@@ -2,7 +2,7 @@
 layout: post
 title: "Understanding In-Context Learning of Linear Models in Transformers Through an Adversarial Lens"
 date:   2024-11-07 14:30:00
-image: /images/profile_photo_cropped.png
+image: /images/404.jpg
 categories: conference
 author: "Usman Anwar"
 authors: "<strong>Usman Anwar</strong>, Johannes Von Oswald, Louis Kirsch, David Krueger, Spencer Frei"
