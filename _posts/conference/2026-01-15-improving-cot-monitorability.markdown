@@ -6,7 +6,7 @@ image: /papers/improving-cot-monitorability/main-result.png
 categories: conference
 author: "Usman Anwar"
 authors: "<strong>Usman Anwar*</strong>, Tim Baker*, Dana Kianfar, Cristina Pinneri, Christos Louizos"
-venue: "Under review at ICML."
+venue: "Under review."
 arxiv: https://arxiv.org/abs/2602.18297
 tweetprint: https://x.com/usmananwar391/status/1974093342561722421
 ---
