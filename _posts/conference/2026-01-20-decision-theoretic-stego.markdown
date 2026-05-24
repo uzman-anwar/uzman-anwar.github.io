@@ -6,7 +6,7 @@ image: /papers/DT-Stego/pic.png
 categories: conference
 author: "Usman Anwar"
 authors: "<strong>Usman Anwar*</strong>, Julianna Piskorz*, David D. Baek, David Africa, Jim Weatherall, Max Tegmark, Christian Schroeder de Witt, Mihaela van der Schaar, David Krueger"
-venue: "Under review."
+venue: "Under review"
 arxiv: https://arxiv.org/abs/2602.23163
 ---
 
