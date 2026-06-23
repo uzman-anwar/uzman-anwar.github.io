@@ -9,5 +9,6 @@ authors: "<strong>Usman Anwar*</strong>, Tim Baker*, Dana Kianfar, Cristina Pinn
 venue: "Under review"
 arxiv: https://arxiv.org/abs/2602.18297
 tweetprint: https://x.com/usmananwar391/status/1974093342561722421
+pdf: /papers/improving-cot-monitorability/paper.pdf
 ---
 We propose a simple training objective based on mutual information that prevents CoT obfuscation and maintains CoT monitorability when models are optimized against monitors. Through our theoretical analysis, we also characterize two possible failure modes for practical monitors: information gap, where the monitor cannot interpret the model's reasoning, and elicitation error, where the monitor fails to correctly evaluate outputs for the target attribute.
