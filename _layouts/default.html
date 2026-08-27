@@ -140,8 +140,10 @@
               {{post.authors}}
 
               <br>
+              {% if post.venue %}
               <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
               <br>
+              {% endif %}
               {% if post.arxiv %}
               <a href="{{post.arxiv}}">arxiv</a> /
               {% endif %}
@@ -205,8 +207,10 @@
               {{post.authors}}
 
               <br>
+              {% if post.venue %}
               <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
               <br>
+              {% endif %}
               {% if post.arxiv %}
               <a href="{{post.arxiv}}">arxiv</a> /
               {% endif %}
