@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Training LLMs to Verbalize Evaluation Awareness"
-date:   2026-08-28 14:30:00
+date:   2026-08-27 09:00:00
 image: /papers/verbalizing-eval-awareness/figure1.png
 categories: conference
 author: "Usman Anwar"
