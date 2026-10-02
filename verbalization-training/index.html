@@ -109,7 +109,7 @@
             <p>Ok; so what can we do about this?</p>
             <p>We propose 'Verbalization Training', a targeted training intervention for increasing the propensity of the LLMs to verbalize a specific belief.</p>
             <p>This is an 'ELK'-shaped problem and notoriously hard because of a catch-22; you need to know the model's belief to supervise its verbalizations, but if you had a way of knowing that, you would not need the verbalizations!</p>
-            <p>We get around this by using the model's own spontaneous verbalizations as witness of the belief. Specifically, (a) we do lots of rollouts and use an LLM judge to localize any verbalizations if they occur, and cut the rollout just before the verbalization to get "training prefixes", (b) and then train continuations of these prefixes via RL on a masking + KL regularized objective which collectively ensure that we are only amplifying the verbalization rate and little else (please read the paper for why this objective makes sense!)</p>
+            <p>We get around this by using the model's own spontaneous verbalizations as a witness of the belief. Specifically, (a) we do lots of rollouts and use an LLM judge to localize any verbalizations if they occur, and cut the rollout just before the verbalization to get "training prefixes", (b) and then train continuations of these prefixes via RL on a masking + KL regularized objective which ensures that we are only amplifying the verbalization rate and little else (please read the paper for why this objective makes sense!)</p>
           </div>
           <figure class="graphic">
             <button class="figure-open" type="button" data-figure="assets/method.svg" aria-label="Enlarge the two-stage training diagram"><img src="assets/method.svg" alt="Stage 1: freeze the prompt and reasoning immediately before a spontaneous verbalization. Stage 2: sample new continuations and apply reward and KL only to verbalization spans; silent continuations receive no update." width="940" height="531" loading="lazy"><span class="zoom-hint" aria-hidden="true">↗</span></button>
@@ -157,7 +157,7 @@
           <div class="post-meta"><span class="post-number">06 / 10</span><span>WHAT ELSE CHANGES?</span><button class="copy-post" type="button" aria-label="Copy post 6">Copy <span aria-hidden="true">⧉</span></button></div>
           <h2 class="post-title">A narrow intervention.</h2>
           <div class="post-copy">
-            <p>And we provide multiple pieces of evidence that this intervention is narrow and does not (a) make the model more eval-aware, (b) change model's behavior in a meaningful way.</p>
+            <p>And we provide multiple pieces of evidence that this intervention is narrow and does not (a) make the model more eval-aware, (b) change the model's behavior in a meaningful way.</p>
           </div>
           <figure class="graphic">
             <button class="figure-open" type="button" data-figure="assets/recognition-behavior.svg" aria-label="Enlarge the recognition and behavior checks"><img src="assets/recognition-behavior.svg" alt="Two groups of full-method checks. Evaluation awareness: base-to-VT classification AUC for all three models and Qwen fixed-probe positive rates at three layers. Behavior: small changes in EAB task compliance, StrongREJECT harmfulness, held-out agentic outcomes, and FineWeb perplexity." width="1680" height="1115" loading="lazy"><span class="zoom-hint" aria-hidden="true">↗</span></button>
@@ -176,7 +176,7 @@
           <div class="post-meta"><span class="post-number">07 / 10</span><span>THE DETAILS MATTER</span><button class="copy-post" type="button" aria-label="Copy post 7">Copy <span aria-hidden="true">⧉</span></button></div>
           <h2 class="post-title">Every component has a job.</h2>
           <div class="post-copy">
-            <p>Finally, we have bunch of ablations that show that you do need all the components within our method for this to work as well as it does. Removing any can result in failures like overfitting, learning failure or miscalibration in amplification.</p>
+            <p>Finally, we have a bunch of ablations that show that you do need all the components within our method for this to work as well as it does. Removing any can result in failures like overfitting, learning failure or miscalibration in amplification.</p>
           </div>
           <figure class="graphic">
             <button class="figure-open" type="button" data-figure="assets/qwen-ablations.svg" aria-label="Enlarge all eight Qwen ablations and baselines"><img src="assets/qwen-ablations.svg" alt="All eight Qwen variants from the paper's ablation table, including SFT and data ablations. Columns show masking, KL, training VEA gain, expected versus observed EAB transfer, task change, length-cap hits, agentic transfer, and the resulting failure mode. Highlighted cells show little learning without masking, uncontrolled amplification without KL, weak SFT transfer, and degeneration without both masking and KL." width="1800" height="1064" loading="lazy"><span class="zoom-hint" aria-hidden="true">↗</span></button>
