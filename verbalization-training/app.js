@@ -41,6 +41,8 @@ document.querySelectorAll(".copy-thread").forEach(button => {
   button.addEventListener("click", () => copyText(threadText(), `All ${postCount} posts copied. Graphics are available separately.`));
 });
 
+// Only initialize editing on pages with author controls. Saved drafts are kept.
+if (document.querySelector(".editor-bar")) {
 // Local-only editing: the static server and manuscript are never written to.
 // The supplied Chrome draft is now the page's text. Keep the old storage key
 // untouched as a backup, but do not let it overwrite this revised thread.
@@ -160,6 +162,7 @@ resetEdits.addEventListener("click", () => {
   saveDraft();
   scheduleReadingUpdate();
 });
+}
 
 const dialog = document.querySelector(".lightbox");
 const lightboxImage = document.querySelector(".lightbox-image");
