@@ -1,0 +1,119 @@
+{
+  "source": "sections/03_experiments1.tex",
+  "table_label": "tab:unified-ablations",
+  "source_sha256": "129f3222225d361906812eb613d0d69795055ee14c44a6faca82a5eab37bdfc0",
+  "definitions": {
+    "training_vea_gain": "Trained minus base VEA on training prompts, in percentage points.",
+    "transfer_expected": "Source-condition-implied VEA rate on EAB conditions outside the source factor, percent.",
+    "transfer_observed": "Observed condition-balanced VEA rate on EAB conditions outside the source factor, percent.",
+    "task_change": "Trained minus base task-performance rate across EAB conditions, in percentage points.",
+    "length_cap_rate": "Fraction of trained responses reaching the 16,000-token limit, percent.",
+    "agentic_transfer": "Qualitative transfer assessment on the three held-out agentic datasets, as reported in the paper."
+  },
+  "rows": [
+    {
+      "prompt_source": "EA+ve Prefixes",
+      "training": "RL",
+      "mask": true,
+      "kl": true,
+      "training_vea_gain": 45.0,
+      "transfer_expected": 9.0,
+      "transfer_observed": 7.5,
+      "task_change": 0.6,
+      "length_cap_rate": 0.1,
+      "agentic_transfer": "Strong",
+      "paper_failure_mode": "None"
+    },
+    {
+      "prompt_source": "EA+ve Prefixes",
+      "training": "RL",
+      "mask": false,
+      "kl": true,
+      "training_vea_gain": 2.6,
+      "transfer_expected": 2.8,
+      "transfer_observed": 2.7,
+      "task_change": 1.1,
+      "length_cap_rate": 0.23,
+      "agentic_transfer": "None",
+      "paper_failure_mode": "Optimization failure"
+    },
+    {
+      "prompt_source": "EA+ve Prefixes",
+      "training": "RL",
+      "mask": true,
+      "kl": false,
+      "training_vea_gain": 61.6,
+      "transfer_expected": 17.8,
+      "transfer_observed": 34.9,
+      "task_change": -2.8,
+      "length_cap_rate": 0.33,
+      "agentic_transfer": "Uncontrolled",
+      "paper_failure_mode": "Control failure"
+    },
+    {
+      "prompt_source": "EA+ve Prefixes",
+      "training": "RL",
+      "mask": false,
+      "kl": false,
+      "training_vea_gain": 16.4,
+      "transfer_expected": 4.3,
+      "transfer_observed": 4.4,
+      "task_change": 1.9,
+      "length_cap_rate": 4.23,
+      "agentic_transfer": "Uneven",
+      "paper_failure_mode": "Output degeneration"
+    },
+    {
+      "prompt_source": "EA+ve Prefixes",
+      "training": "SFT",
+      "mask": true,
+      "kl": false,
+      "training_vea_gain": 27.6,
+      "transfer_expected": 5.7,
+      "transfer_observed": 3.8,
+      "task_change": -0.4,
+      "length_cap_rate": 0.08,
+      "agentic_transfer": "Weak",
+      "paper_failure_mode": "Weak transfer"
+    },
+    {
+      "prompt_source": "EA+ve Prompts",
+      "training": "RL",
+      "mask": true,
+      "kl": true,
+      "training_vea_gain": 47.8,
+      "transfer_expected": 9.7,
+      "transfer_observed": 8.0,
+      "task_change": 0.3,
+      "length_cap_rate": 0.25,
+      "agentic_transfer": "Strong",
+      "paper_failure_mode": "Mild VEA overfitting"
+    },
+    {
+      "prompt_source": "Random Prompts",
+      "training": "RL",
+      "mask": true,
+      "kl": true,
+      "training_vea_gain": 46.4,
+      "transfer_expected": 9.4,
+      "transfer_observed": 8.3,
+      "task_change": -0.7,
+      "length_cap_rate": 0.28,
+      "agentic_transfer": "Strong",
+      "paper_failure_mode": "Mild VEA overfitting"
+    },
+    {
+      "prompt_source": "Random Prompts",
+      "training": "RL",
+      "mask": false,
+      "kl": false,
+      "training_vea_gain": 50.6,
+      "transfer_expected": 10.6,
+      "transfer_observed": 7.9,
+      "task_change": -6.9,
+      "length_cap_rate": 18.13,
+      "agentic_transfer": "Uneven",
+      "paper_failure_mode": "Output degeneration"
+    }
+  ]
+}

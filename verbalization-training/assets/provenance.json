@@ -1,0 +1,35 @@
+{
+  "paper_sha256": "aaa0045565aa5f853b5eedc5fa6906ac2fa1983a64170339de100cc0b4f15e55",
+  "abstract_page": 1,
+  "method_page": 3,
+  "data_sha256": "38034d0466f5c55859121ba1c5305713b55f28fa14601152b87b0f01910ed83d",
+  "source_files": {
+    "opus46": {
+      "title": "Claude Opus 4.6 System Card, UK AISI evaluation",
+      "url": "https://www-cdn.anthropic.com/6a5fa276ac68b9aeb0c8b6af5fa36326e0e166dd.pdf#page=118",
+      "pages": [
+        118
+      ],
+      "note": "Early Opus 4.6 snapshot. Single-interaction recognition when prompted after the interaction, versus spontaneous mentions. These are two different measurements, not an estimate of recall. Verified against the system-card text."
+    },
+    "fable": {
+      "title": "Claude Fable 5 & Claude Mythos 5 System Card",
+      "url": "https://www-cdn.anthropic.com/2f9323abbcc4abe219577539efe19a623c9ca2bd/Claude%20Fable%205%20%26%20Claude%20Mythos%205%20System%20Card.pdf#page=188",
+      "pages": [
+        188,
+        190
+      ],
+      "note": "Figure 6.5.1.1.C reports transcript-level NLA/probe correlation; Figure 6.5.1.1.E reports correlations with spontaneous VEA across audit scenarios. Values verified visually from those figures."
+    },
+    "paper": {
+      "title": "Training LLMs to Verbalize Evaluation Awareness",
+      "url": "assets/paper.pdf",
+      "files": [
+        "sections/03_experiments1.tex",
+        "sections/04_experiments2.tex",
+        "main.pdf"
+      ],
+      "note": "Plots transcribe the main-text results. The abstract, requirements and method excerpts are cropped from the existing compiled main.pdf; the paper source is not modified or recompiled."
+    }
+  }
+}

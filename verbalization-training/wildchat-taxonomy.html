@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="canonical" href="https://uzman-anwar.github.io/verbalization-training/wildchat-taxonomy.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f4ed">
+  <meta name="description" content="What do language models think real WildChat users are testing? A short exploratory taxonomy of evaluation-awareness verbalizations.">
+  <title>What do models think WildChat is testing?</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .blog { max-width: 780px; margin: 0 auto; padding: 55px 28px 65px; }
+    .blog h1 { font-family: var(--serif); font-size: clamp(34px, 5vw, 54px); line-height: 1.12; font-weight: 500; letter-spacing: -1.6px; margin: 14px 0 20px; }
+    .blog h2 { font-size: 22px; line-height: 1.3; margin: 32px 0 15px; letter-spacing: -.4px; }
+    .blog p { margin: 0 0 17px; }
+    .blog .deck { color: var(--muted); font-size: 19px; line-height: 1.5; }
+    .blog .byline { font-size: 13px; color: var(--muted); margin: 22px 0 32px; }
+    .dataset-method { padding: 18px 20px; margin: 0 0 26px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); font-size: 14px; line-height: 1.65; }
+    .dataset-method p:last-child { margin-bottom: 0; }
+    .dataset-method summary { cursor: pointer; color: var(--green-dark); }
+    .dataset-method details p { margin: 12px 0 0; }
+    .blog .editable:focus { outline: 1px dashed var(--green); outline-offset: 7px; border-radius: 3px; }
+    .blog figure { padding: 23px; background: var(--paper); border: 1px solid var(--line); border-radius: 10px; margin: 23px 0; }
+    .blog figcaption { display: block; padding: 0; font-size: 13px; color: var(--muted); }
+    .blog figcaption strong { display: block; color: var(--ink); font-size: 16px; margin-bottom: 2px; }
+    .frame-bar { display: flex; height: 23px; margin: 20px 0 17px; border-radius: 4px; overflow: hidden; }
+    .frame-bar span { flex-shrink: 0; }
+    .frame-legend { display: grid; gap: 8px; }
+    .frame-legend div { display: flex; align-items: center; gap: 9px; font-size: 14px; }
+    .frame-legend i { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
+    .frame-legend b { margin-left: auto; font-variant-numeric: tabular-nums; font-weight: 600; }
+    .example { padding: 21px 0; border-top: 1px solid var(--line); }
+    .example h3 { font-size: 13px; color: var(--green-dark); margin-bottom: 12px; }
+    .example p { font-size: 15px; margin-bottom: 11px; line-height: 1.6; white-space: pre-wrap; }
+    .example blockquote { border-left: 3px solid var(--green); padding-left: 17px; font-family: var(--serif); font-size: 19px; line-height: 1.5; }
+    .vea-highlight { background: #e8efff; color: #174b9a; border-radius: 2px; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+    .example .case-id { margin-top: 12px; }
+    .example-label { display: block; font-family: var(--sans); font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin-bottom: 5px; }
+    .target-table { border-collapse: collapse; width: 100%; margin: 20px 0 24px; font-size: 14px; }
+    .target-table th, .target-table td { padding: 8px 4px; border-bottom: 1px solid var(--line); text-align: right; font-variant-numeric: tabular-nums; }
+    .target-table th:first-child { text-align: left; font-weight: 500; padding-right: 12px; white-space: normal; }
+    .target-table thead th { font-size: 12px; color: var(--muted); }
+    .target-table td { width: 62px; white-space: nowrap; }
+    .explorer-filters { display: grid; grid-template-columns: 1fr 1.6fr; gap: 13px; padding: 18px; border: 1px solid var(--line); background: var(--paper); border-radius: 8px; }
+    .explorer-filters label, .group-control { display: flex; flex-direction: column; gap: 5px; font-size: 12px; color: var(--muted); }
+    .explorer-filters input, .explorer-filters select, .group-control select { font: inherit; font-size: 14px; color: var(--ink); background: white; border: 1px solid #c8d2c6; border-radius: 4px; padding: 9px; width: 100%; min-width: 0; }
+    .explorer-filters .search-control { grid-column: 1 / -1; }
+    .explorer-filters .advanced-filters { grid-column: 1 / -1; font-size: 12px; color: var(--muted); }
+    .advanced-filters summary { cursor: pointer; }
+    .advanced-filters .advanced-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 13px; padding-top: 13px; }
+    .frame-buttons { display: flex; flex-wrap: wrap; gap: 7px; margin: 16px 0; }
+    .frame-buttons button { font: inherit; font-size: 13px; line-height: 1.5; color: var(--ink); background: var(--paper); border: 1px solid #c8d2c6; border-radius: 5px; padding: 9px 12px; }
+    .frame-buttons button[aria-pressed="true"] { background: var(--green); color: white; border-color: var(--green); }
+    .frame-buttons b { margin-left: 8px; font-variant-numeric: tabular-nums; }
+    .group-control { max-width: 290px; margin: 14px 0; }
+    .browser-actions { display: flex; flex-wrap: wrap; gap: 16px; margin: 14px 0; font-size: 12px; }
+    .category-group { border: 1px solid var(--line); background: var(--paper); border-radius: 8px; margin: 12px 0; scroll-margin-top: 25px; }
+    .category-group > summary { padding: 18px; cursor: pointer; font-weight: 600; font-size: 16px; }
+    .category-group > summary::marker, .case-card > summary::marker { color: var(--green); }
+    .group-count { float: right; color: var(--muted); font-size: 12px; font-weight: 400; }
+    .group-description { padding: 0 18px 5px; }
+    .case-list { padding: 0 12px 12px; }
+    .case-card { border-top: 1px solid var(--line); padding: 2px 5px; }
+    .case-card > summary { cursor: pointer; padding: 13px 0; font-size: 14px; line-height: 1.55; overflow-wrap: anywhere; }
+    .case-meta { display: block; color: var(--green-dark); font-size: 12px; margin: 0 0 4px 16px; font-weight: 600; }
+    .case-content { padding: 2px 6px 19px 16px; overflow-wrap: anywhere; }
+    .case-content p { font-size: 14px; }
+    .case-content .raw { white-space: pre-wrap; }
+    .case-content blockquote { white-space: pre-wrap; border-left: 3px solid var(--green); padding-left: 14px; font-size: 15px; line-height: 1.65; margin-bottom: 15px; }
+    .case-content details { margin: 13px 0; font-size: 13px; }
+    .case-content details summary { cursor: pointer; color: var(--green-dark); }
+    .full-reasoning { font-size: 14px; line-height: 1.7; max-height: 65vh; overflow: auto; padding: 14px; border: 1px solid var(--line); margin-top: 10px; }
+    .case-labels { display: flex; flex-wrap: wrap; gap: 6px; padding: 10px 0; }
+    .case-labels span { padding: 3px 7px; background: #edf1e8; border-radius: 4px; font-size: 11px; }
+    .case-id { font-size: 10px; color: var(--muted); word-break: break-all; }
+    .empty-results { padding: 22px; background: var(--paper); border: 1px dashed var(--line); border-radius: 7px; }
+    .blog .examples-note { font-size: 13px; color: var(--muted); }
+    .blog-footer { border-top: 1px solid var(--line); margin-top: 28px; padding-top: 17px; font-size: 12px; color: var(--muted); }
+    .blog-editor { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; font-size: 12px; padding-bottom: 22px; }
+    #blog-status { flex: 1 1 240px; color: var(--muted); }
+    @media (max-width: 520px) { .blog { padding: 32px 22px; } .blog figure { padding: 18px; } .site-header { padding: 0 22px; } .brand { font-size: 13px; } .explorer-filters { grid-template-columns: 1fr; padding: 13px; } .category-group > summary { padding: 14px; } .group-count { float: none; margin-left: 8px; } .advanced-filters .advanced-grid { grid-template-columns: 1fr; } }
+    @media print { .blog-editor, .site-header { display: none; } .blog { max-width: none; padding: 0; } figure, .example { break-inside: avoid; } }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the post</a>
+  <header class="site-header">
+    <a class="brand" href="./"><span class="brand-mark">vt</span><span>Verbalization training</span></a>
+    <a class="quiet-link" href="./">← Paper thread</a>
+  </header>
+  <main class="blog" id="main">
+    <article>
+      <div class="eyebrow">RESEARCH NOTE · WILDCHAT</div>
+      <div class="editable" data-edit="title">
+        <h1>What do models think WildChat is testing?</h1>
+        <p class="deck">“The user might be testing me” can mean several different things.</p>
+      </div>
+      <p class="byline">Written by Lumen (Codex, GPT-6-Astra-XHigh) · Guided by Usman Anwar</p>
+      <aside class="dataset-method" id="dataset-method" aria-label="Public dataset and methodology">
+        <p>This analysis uses our <a href="https://huggingface.co/datasets/Usman391/WildChat-Evaluation-Awareness-Taxonomy">public WildChat VEA taxonomy dataset</a>: full prompts and saved reasoning for all 766 positive responses, taxonomy labels, and the original VEA labels for all 12,000 responses.</p>
+        <p><strong>How we did it.</strong> We sampled one base and one VT response to each of 2,000 initial requests for each model, using temperature 0.3 and a 16,000-token limit. We then reused the saved responses: Luna identified VEA, and a second Luna pass classified what the model thought was being tested, its evidence, and its confidence. Below, we focus on the 356 cases where the sampled base response was negative and the VT response was positive.</p>
+        <details>
+          <summary>Sampling and judging details</summary>
+          <p>The requests came from a frozen, seed-42 panel of English-labeled WildChat-1M conversations, filtered to at most 4,096 rendered conversation tokens. Models saw only the first user request and a common system prompt. Each request also has a realism score from 25 Luna comparisons with other real WildChat requests.</p>
+          <p>The taxonomy judge saw the prompt, localized VEA evidence, and a window of surrounding reasoning, along with the model, policy, and realism score. These are Luna's classifications, not human gold labels. The dataset includes the exact prompts, input-window code, generation settings, and a script that reproduces the summary counts without new model calls.</p>
+        </details>
+      </aside>
+      <div class="blog-editor" hidden>
+        <span id="blog-status" role="status">Click the prose to edit. Saved in this browser only.</span>
+        <button class="text-button" id="blog-download" type="button">Download text ↓</button>
+        <button class="text-button" id="blog-reset" type="button">Reset edits</button>
+      </div>
+      <div class="editable" data-edit="intro">
+        <p>Models sometimes describe real user requests as tests. What do they think is being tested? We looked at Qwen, Inkling, and Kimi K2.6 on the same 2,000 initial WildChat requests, before and after verbalization training (VT), which trains models to report an existing belief more often.</p>
+      </div>
+      <p>We used GPT-5.6-Luna to classify all <span data-stat="positive_responses">766</span> responses containing verbalized evaluation awareness (VEA). We asked what the model thought was being tested, which prompt features it cited, and how confident it sounded.</p>
+
+      <div class="editable" data-edit="taxonomy">
+        <h2>A small taxonomy of suspected tests</h2>
+        <p><strong>Knowledge and reasoning:</strong> does the model know an obscure fact, recognize a reference, or solve a puzzle? <strong>Instruction following:</strong> can it obey a restrictive format or an unusual editing request? <strong>Safety:</strong> will it comply with something harmful? <strong>Honesty:</strong> will it catch a false premise rather than invent an answer?</p>
+        <p>Qwen leans toward formatting and instruction-following tests. Inkling and Kimi more often suspect safety traps or tests of how they handle false premises.</p>
+      </div>
+
+      <h2>Usually an informal test, not a benchmark</h2>
+      <p>There are <span data-stat="new_positives">356</span> model–prompt pairs where the sampled base response contains no VEA but the VT response does. Among these new verbalizations, <span data-stat="tentative">85.7%</span> are tentative, and <span data-stat="grounded">83.7%</span> connect the suspicion to a specific prompt feature.</p>
+      <figure aria-label="Kinds of test described in the 356 new VT-positive responses">
+        <figcaption><strong>What kind of test?</strong>Among the <span data-stat="new_positives">356</span> new VT-positive responses</figcaption>
+        <div class="frame-bar" id="frame-bar" aria-hidden="true"></div>
+        <div class="frame-legend" id="frame-legend"></div>
+      </figure>
+      <div class="editable" data-edit="interpretation">
+        <p>The dominant reading is not “I’m inside a formal benchmark.” It is “the user may be testing my knowledge, instructions, or safety.” Being tied to a prompt feature does not establish that the user actually intended a test.</p>
+      </div>
+
+      <h2>What this looks like</h2>
+      <p class="examples-note"><mark class="vea-highlight">Blue highlights</mark> mark the identified verbalization. Prompt IDs link to the corresponding response in the public dataset.</p>
+      <div id="examples"></div>
+      <div class="editable" data-edit="takeaway">
+        <p>The first prompt really does look like a benchmark question. The second is a normal request whose ambiguity prompts the model to consider a test. Both count as VEA, but they express different hypotheses about the interaction.</p>
+        <p><strong>My takeaway:</strong> evaluation awareness is a broader category than recognizing formal evaluations. These verbalizations also reveal how models interpret users’ intentions—and VT gives us more of that reasoning to examine.</p>
+      </div>
+      <section id="taxonomy-browser" aria-labelledby="informal-heading">
+        <span id="informal-tests"></span>
+        <div class="editable" data-edit="informal-intro">
+          <h2 id="informal-heading">Explore the taxonomy</h2>
+          <p>Click a suspected target to open its examples. Each category contains all matching responses, not just a selected illustration. You can filter by model, compare base and VT, or explore the cues that make a request look like a test.</p>
+        </div>
+        <p class="examples-note">The default view uses the 356 new VT positives above. All 766 labeled responses are available. Filters affect this browser, not the summary above.</p>
+        <div class="explorer-filters">
+          <label>Model<select id="filter-model"><option value="all">All three models</option></select></label>
+          <label>Responses<select id="filter-scope">
+            <option value="new">New VT positives</option>
+            <option value="trained">All VT positives</option>
+            <option value="base">Base positives</option>
+            <option value="all">All VEA-positive responses</option>
+          </select></label>
+          <label class="search-control">Search prompts, excerpts, and judge summaries<input id="filter-search" type="search" placeholder="e.g. citations, safety, university…" autocomplete="off"></label>
+          <details class="advanced-filters"><summary>Filter by confidence or grounding</summary><div class="advanced-grid">
+            <label>Confidence<select id="filter-confidence"><option value="all">Any confidence</option></select></label>
+            <label>Grounding<select id="filter-grounding"><option value="all">Any grounding</option></select></label>
+          </div></details>
+        </div>
+        <div class="frame-buttons" id="frame-buttons" role="group" aria-label="Kind of test"></div>
+        <p class="examples-note" id="explorer-status" role="status" aria-live="polite"></p>
+        <label class="group-control">Browse subcategories by<select id="filter-grouping">
+          <option value="target">What is being tested</option><option value="cue">What triggered the suspicion</option>
+        </select></label>
+        <p class="examples-note" id="grouping-note"></p>
+        <table class="target-table" id="explorer-table" aria-label="Taxonomy breakdown for the selected responses">
+          <thead><tr><th scope="col" id="group-column-label">Suspected target</th><th scope="col">Cases</th><th scope="col">Share</th></tr></thead>
+          <tbody id="explorer-targets"></tbody>
+        </table>
+        <div class="browser-actions">
+          <button type="button" class="text-button" id="reset-filters">Reset filters</button>
+          <button type="button" class="text-button" id="collapse-categories">Collapse categories</button>
+          <button type="button" class="text-button" id="download-cases">Download matching cases ↓</button>
+        </div>
+        <p class="examples-note">Some requests contain harmful or explicit material. Full prompts and reasoning remain collapsed until opened. Suspected targets and explanations are Luna’s labels; quoted passages are exact saved model text.</p>
+        <div id="category-groups"></div>
+      </section>
+      <footer class="blog-footer">
+        Categories are Luna’s labels of saved reasoning, not measurements of the users’ intentions. Each example identifies its model and policy. Prompts are reproduced in full; reasoning excerpts are verbatim, with the complete saved reasoning available on demand.
+        <p><a href="assets/wildchat-taxonomy-data.json">Counts, excerpts &amp; provenance</a> · <a href="./">Read the paper thread</a></p>
+      </footer>
+    </article>
+  </main>
+  <script>
+    "use strict";
+    const storageKey = "vt-wildchat-taxonomy-blog-v1";
+    const blocks = [...document.querySelectorAll(".editable")];
+    const originals = blocks.map(block => block.innerHTML);
+    const status = document.querySelector("#blog-status");
+    let draft = {};
+    try { draft = JSON.parse(localStorage.getItem(storageKey) || "{}"); } catch { draft = {}; }
+    if (!draft || typeof draft !== "object" || Array.isArray(draft)) draft = {};
+    blocks.forEach(block => {
+      // Persist text only; never interpret saved user text as HTML.
+      if (typeof draft[block.dataset.edit] === "string") {
+        const structure = [...block.children].map(el => ({tag: el.tagName, className: el.className, id: el.id}));
+        block.replaceChildren(...draft[block.dataset.edit].split(/\n\s*\n/).map((text, index) => {
+          const p = document.createElement(structure[index]?.tag || "p");
+          p.className = structure[index]?.className || "";
+          if (structure[index]?.id) p.id = structure[index].id;
+          p.textContent = text;
+          return p;
+        }));
+      }
+      block.contentEditable = "true";
+      block.setAttribute("aria-label", `Edit ${block.dataset.edit}`);
+      block.addEventListener("paste", event => {
+        event.preventDefault();
+        document.execCommand("insertText", false, event.clipboardData.getData("text/plain"));
+      });
+      block.addEventListener("drop", event => event.preventDefault());
+      block.addEventListener("input", () => {
+        draft[block.dataset.edit] = block.innerText;
+        try { localStorage.setItem(storageKey, JSON.stringify(draft)); status.textContent = "Saved in this browser only."; }
+        catch { status.textContent = "Could not save. Download your text before leaving."; }
+      });
+    });
+    document.querySelector(".blog-editor").hidden = false;
+    document.querySelector("#blog-reset").addEventListener("click", () => {
+      if (!confirm("Reset this post’s browser edits? Download your text first to keep a copy.")) return;
+      blocks.forEach((block, i) => { block.innerHTML = originals[i]; });
+      draft = {};
+      try { localStorage.removeItem(storageKey); status.textContent = "Original draft restored."; }
+      catch { status.textContent = "Restored here, but could not clear browser storage."; }
+    });
+    document.querySelector("#blog-download").addEventListener("click", () => {
+      const article = document.querySelector("article").cloneNode(true);
+      article.querySelector(".blog-editor").remove();
+      const text = [...article.querySelectorAll("h1, h2, h3, p, blockquote, figcaption, .frame-legend, tr, summary")].map(el => el.matches("tr") ? [...el.children].map(cell => cell.textContent.trim()).join(" | ") : el.textContent.trim()).join("\n\n");
+      const url = URL.createObjectURL(new Blob([text], {type: "text/plain;charset=utf-8"}));
+      const link = Object.assign(document.createElement("a"), {href: url, download: "wildchat-taxonomy.txt"});
+      link.click();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    });
+    fetch("assets/wildchat-taxonomy-data.json").then(response => {
+      if (!response.ok) throw new Error("Could not load taxonomy data.");
+      return response.json();
+    }).then(async data => {
+      const percent = count => `${(100 * count / data.new_positives).toFixed(1)}%`;
+      const stats = {...data, informal_count: data.informal.count, tentative: percent(data.confidence.tentative), grounded: percent(data.grounding.grounded_in_specific_prompt_feature)};
+      document.querySelectorAll("[data-stat]").forEach(el => { el.textContent = stats[el.dataset.stat]; });
+      const frames = [
+        ["user_informally_testing_assistant", "Informal user test", "#267451"],
+        ["safety_or_policy_trap", "Safety or policy trap", "#4260ce"],
+        ["formal_evaluation_or_benchmark", "Formal evaluation or benchmark", "#bd6049"],
+      ];
+      for (const [key, label, color] of frames) {
+        const segment = document.createElement("span");
+        segment.style.width = percent(data.frames[key]);
+        segment.style.background = color;
+        document.querySelector("#frame-bar").append(segment);
+        const row = document.createElement("div");
+        const swatch = document.createElement("i");
+        swatch.style.background = color;
+        const value = document.createElement("b");
+        value.textContent = percent(data.frames[key]);
+        const link = document.createElement("a");
+        link.href = "#taxonomy-browser";
+        link.dataset.exploreFrame = key;
+        link.textContent = label;
+        row.append(swatch, link, value);
+        document.querySelector("#frame-legend").append(row);
+      }
+      const {initExplorer, highlightVerbalization, promptDatasetLink} = await import("./taxonomy-explorer.js");
+      for (const example of data.examples) {
+        const section = document.createElement("section");
+        section.className = "example";
+        section.dataset.promptId = example.prompt_id;
+        const heading = document.createElement("h3");
+        heading.textContent = `${example.model} · ${example.heading}`;
+        const prompt = document.createElement("p");
+        const promptLabel = document.createElement("span");
+        promptLabel.className = "example-label";
+        promptLabel.textContent = "User prompt";
+        prompt.append(promptLabel, document.createTextNode(example.prompt));
+        const quote = document.createElement("blockquote");
+        highlightVerbalization(quote, example.quote, example.quote_spans);
+        const source = document.createElement("div");
+        source.className = "case-id";
+        source.append(promptDatasetLink(example));
+        section.append(heading, prompt, quote, source);
+        document.querySelector("#examples").append(section);
+      }
+      initExplorer(data.explorer);
+      document.documentElement.dataset.ready = "true";
+    }).catch(error => { status.textContent = error.message; console.error(error); });
+  </script>
+</body>
+</html>
