@@ -1,5 +1,10 @@
 # updated website
 
+The standalone [CoT controllability page](https://uzman-anwar.github.io/cot-controllability/)
+is in `cot-controllability/`. It preserves the published LessWrong post's text,
+tables, notes and eight figures, and uses the verbalization-training stylesheet.
+The page requires no build step; its homepage entry is in `_posts/conference/2026-10-19-cot-controllability.markdown`.
+
 This repo is built on a fork of **Jekyll Now** from [this repository](https://github.com/barryclark/jekyll-now). **Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
 
 The website design is just a modification of [Jon Barron's website](https://jonbarron.info/) and is converted for my own use, re-purposing my old markdown posts. **Feel free to use template for your own purposes**, but please respect copyright for all the images/content in my `images`, `pdfs`, `_posts` folders. 
