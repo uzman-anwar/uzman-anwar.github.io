@@ -4,6 +4,7 @@ title: "Training LLMs to Verbalize Evaluation Awareness"
 date:   2026-08-27 09:00:00
 image: /papers/verbalizing-eval-awareness/figure1.png
 categories: conference
+topics: [selected, cot-monitorability]
 author: "Usman Anwar"
 authors: "<strong>Usman Anwar</strong>, Sahar Abdelnabi, David Krueger"
 venue: "Under review"

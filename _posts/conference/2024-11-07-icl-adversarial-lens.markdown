@@ -4,6 +4,7 @@ title: "Understanding In-Context Learning of Linear Models in Transformers Throu
 date:   2025-01-15 14:30:00
 image: /papers/icl-adversarial-lens/figure-5b.png
 categories: conference
+topics: [selected, interpretability]
 author: "Usman Anwar"
 authors: "<strong>Usman Anwar</strong>, Johannes Von Oswald, Louis Kirsch, David Krueger, Spencer Frei"
 venue: "Transactions on Machine Learning Research (Featured Certification, 2025)"

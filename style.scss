@@ -99,6 +99,37 @@ span.highlight {
   background-color: #ffffd0;
 }
 
+/* Topic tabs above the publication list */
+.topic-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.topic-tab {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  padding: 8px 12px;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #6b7280;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color .2s ease-in-out, border-color .2s ease-in-out;
+}
+
+.topic-tab:hover {
+  color: #374151;
+}
+
+.topic-tab.active {
+  color: #1772d0;
+  border-bottom-color: #1772d0;
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 //@import "highlights";

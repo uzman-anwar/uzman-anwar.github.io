@@ -14,6 +14,30 @@ name: Usman Anwar
 # Google verification
 google_verify: JPbOubJaC2mL8iAHkgyakFWZBTs2do1Ry1IRBlaEz3I
 
+# Topic tabs above the publication list (like micahcarroll.github.io).
+# Set to false to go back to the original single "Selected Publications"
+# list: no tabs, no blog posts, and only the posts in _posts/conference.
+topic_tabs: true
+
+# Tabs, in display order. A post shows up under a tab when the slug is in
+# its `topics:` front matter; "selected" is the default tab and "all" shows
+# everything.
+topics:
+  - slug: selected
+    name: Selected
+  - slug: cot-monitorability
+    name: CoT Monitorability
+  - slug: interpretability
+    name: Interpretability
+  - slug: llm-alignment
+    name: LLM Alignment
+  - slug: rl
+    name: RL
+  - slug: governance
+    name: Governance
+  - slug: all
+    name: All
+
 #
 # Flags below are optional
 #

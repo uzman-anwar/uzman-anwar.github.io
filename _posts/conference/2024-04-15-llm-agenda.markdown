@@ -4,6 +4,7 @@ title:  "Foundational Challenges in Assuring Alignment and Safety of Large Langu
 date:   2024-04-15 14:30:00
 image: /papers/LLM-Agenda/shoggath.png
 categories: conference
+topics: [selected, llm-alignment, governance]
 author: "Usman Anwar"
 authors: "<strong>Usman Anwar</strong> and 41 other authors"
 venue: "Transactions on Machine Learning Research (Survey Certification)"

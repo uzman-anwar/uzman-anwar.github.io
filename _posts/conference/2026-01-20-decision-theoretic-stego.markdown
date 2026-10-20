@@ -4,6 +4,7 @@ title: "A Decision-Theoretic Formalisation of Steganography With Applications to
 date:   2026-01-30 14:30:00
 image: /papers/DT-Stego/pic.png
 categories: conference
+topics: [selected, cot-monitorability]
 author: "Usman Anwar"
 authors: "<strong>Usman Anwar*</strong>, Julianna Piskorz*, David D. Baek, David Africa, Jim Weatherall, Max Tegmark, Christian Schroeder de Witt, Mihaela van der Schaar, David Krueger"
 arxiv: https://arxiv.org/abs/2602.23163
