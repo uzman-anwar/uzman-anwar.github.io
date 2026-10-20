@@ -2,6 +2,7 @@
 layout: post
 title: "Mitigating Goal Misgeneralization via Minimax Regret"
 date:   2025-07-03 09:00:00
+image: /papers/goal-misgeneralization/figure.png
 categories: other
 topics: [rl]
 author: "Usman Anwar"

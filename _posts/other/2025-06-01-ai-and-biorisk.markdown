@@ -2,6 +2,7 @@
 layout: post
 title: "The Reality of AI and Biorisk"
 date:   2025-06-01 09:00:00
+image: /papers/AI-biorisk/figure.jpg
 categories: other
 topics: [governance]
 author: "Usman Anwar"

@@ -2,6 +2,7 @@
 layout: post
 title: "Comparing Bottom-Up and Top-Down Steering Approaches on In-Context Learning Tasks"
 date:   2024-11-11 09:00:00
+image: /papers/steering-comparison/figure.png
 categories: other
 topics: [interpretability]
 author: "Usman Anwar"

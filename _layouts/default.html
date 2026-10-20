@@ -35,12 +35,11 @@
                 <a href="https://www.linkedin.com/in/uzman-anwar/"> LinkedIn </a> &nbsp;/&nbsp;
                 <a href="/pdfs/Usman_Anwar.pdf"> CV  </a>
               </p>
-              <p>If you want to chat or collaborate with me, or pitch me on what I should do post-PhD, please drop me an email.</p>
         <!--<p>My research statement on AI Safety is available <a href="/pdfs/Research_Statement_On_AI_Safety.pdf">here</a>.</p>
         <p>My research statement on Systematic Generalization is available <a href="/pdfs/Research_Proposal_Systematic_Generalization.pdf">here</a>.</p> -->
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <img style="width:100%;max-width:100%" alt="xyz1 photo" src="images/profile_photo_cropped.png">
+              <img style="width:100%;max-width:100%" alt="xyz1 photo" src="images/headshot.jpg">
             </td>
           </tr>
         </table>
@@ -117,7 +116,7 @@
 
 
         {% if site.topic_tabs %}
-        <h2>Publications</h2>
+        <h2>Publications, Preprints and Blog Posts</h2>
         {% else %}
         <h2>Selected Publications</h2>
         {% endif %}
@@ -129,7 +128,7 @@
           <button class="topic-tab{% if forloop.first %} active{% endif %}" data-topic="{{ topic.slug }}">{{ topic.name }}</button>
           {% endfor %}
         </div>
-        {% assign pub_categories = "conference,other,workshop" | split: "," %}
+        {% assign pub_categories = "conference,other,blog" | split: "," %}
         {% else %}
         {% assign pub_categories = "conference" | split: "," %}
         {% endif %}
@@ -198,35 +197,6 @@
           {% endfor %}
           {% endfor %}
         </table>
-
-<!--                        BLOG POSTS (shown with topic tabs)                   -->
-
-        {% if site.topic_tabs %}
-        <div class="topic-section">
-        <br>
-        <h2>Blog Posts</h2>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'blog' %}
-          <tr data-topics="{{ post.topics | join: ' ' }}">
-            <td style="padding:2.5%;padding-bottom:0;width:100%;vertical-align:middle">
-              <h3><a href="{{post.link}}">{{post.title}}</a></h3>
-              <br>
-              {{post.authors}}
-              <br>
-              <em>{{post.venue}}</em>, {{ post.date | date: "%B %Y" }}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-        </div>
-        {% endif %}
 
 <!--
     *****************************************
@@ -416,7 +386,6 @@
       var tabs = Array.prototype.slice.call(document.querySelectorAll('.topic-tab'));
       if (!tabs.length) return;
       var items = Array.prototype.slice.call(document.querySelectorAll('[data-topics]'));
-      var sections = Array.prototype.slice.call(document.querySelectorAll('.topic-section'));
       var defaultTopic = tabs[0].dataset.topic;
 
       function show(topic) {
@@ -426,11 +395,6 @@
         items.forEach(function (item) {
           var topics = item.dataset.topics.split(' ');
           item.style.display = (topic === 'all' || topics.indexOf(topic) !== -1) ? '' : 'none';
-        });
-        // Hide a whole section (e.g. Blog Posts) when nothing in it matches.
-        sections.forEach(function (section) {
-          var rows = Array.prototype.slice.call(section.querySelectorAll('[data-topics]'));
-          section.style.display = rows.some(function (row) { return row.style.display !== 'none'; }) ? '' : 'none';
         });
       }
 
