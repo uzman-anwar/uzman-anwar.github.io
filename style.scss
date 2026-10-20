@@ -130,6 +130,46 @@ span.highlight {
   border-bottom-color: #1772d0;
 }
 
+.topic-description {
+  margin: 16px 2.5% 0 2.5%;
+  color: #374151;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* Phones: photo above the bio instead of beside it, and no justified text
+   (it leaves big gaps between words in narrow columns). The !important
+   overrides the inline table styles in default.html. */
+@media (max-width: 600px) {
+  table.intro,
+  table.intro > tbody {
+    display: block;
+  }
+
+  table.intro > tbody > tr {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  table.intro td.intro-text,
+  table.intro td.intro-photo {
+    display: block;
+    width: auto !important;
+    max-width: none !important;
+  }
+
+  table.intro td.intro-photo img {
+    display: block;
+    max-width: 220px !important;
+    margin: 0 auto;
+  }
+
+  .intro-text .bio,
+  .topic-description {
+    text-align: left !important;
+  }
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 //@import "highlights";

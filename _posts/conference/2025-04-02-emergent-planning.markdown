@@ -2,7 +2,7 @@
 layout: post
 title: "Interpreting Emergent Planning in Model-Free Reinforcement Learning"
 date:   2025-04-02 14:30:00
-image: /papers/interpreting-emergent-planning/figure.png
+image: /papers/interpreting-emergent-planning/figure.jpg
 categories: conference
 topics: [selected, interpretability, rl]
 author: "Usman Anwar"

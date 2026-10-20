@@ -6,7 +6,7 @@ image: /papers/improving-cot-monitorability/main-result.png
 categories: conference
 topics: [selected, cot-monitorability]
 author: "Usman Anwar"
-authors: "<strong>Usman Anwar*</strong>, Tim Baker*, Dana Kianfar, Cristina Pinneri, Christos Louizos"
+authors: "<strong>Usman Anwar*</strong>, Tim Bakker*, Dana Kianfar, Cristina Pinneri, Christos Louizos"
 arxiv: https://arxiv.org/abs/2602.18297
 tweetprint: https://x.com/usmananwar391/status/1974093342561722421
 pdf: /papers/improving-cot-monitorability/paper.pdf

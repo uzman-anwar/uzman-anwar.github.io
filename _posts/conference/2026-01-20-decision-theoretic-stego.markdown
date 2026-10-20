@@ -11,5 +11,5 @@ arxiv: https://arxiv.org/abs/2602.23163
 tweetprint: https://x.com/usmananwar391/status/2033568053728854221
 ---
 
-Current approaches to detecting hidden communication in AI systems rely on ad-hoc approaches such as inspecting messages for anomalies. We introduce a new framework that instead detects steganography through its behavioral effects; measuring whether a signal helps intended recipients more than outside monitors on real tasks.
+Current approaches to detecting hidden communication in AI systems rely on ad-hoc approaches such as inspecting messages for anomalies. We introduce a new framework that instead detects steganography through its behavioral effects: measuring whether a signal helps intended recipients more than outside monitors on real tasks.
 

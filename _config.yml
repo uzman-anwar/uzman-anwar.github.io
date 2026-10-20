@@ -5,8 +5,8 @@
 # Name of your site (displayed in the header)
 name: Usman Anwar
 
-# Short bio or description (displayed in the header)
-# description: the profile of an engineer, researcher and software developer
+# Short description, used for search results and link previews
+description: Usman Anwar is a final-year PhD student at the University of Cambridge working on AI safety and alignment, with a recent focus on chain-of-thought monitorability.
 
 # # URL of your avatar or profile pic (you could use your GitHub profile pic)
 # avatar: images/circle_bw_crop.jpg
@@ -21,20 +21,48 @@ topic_tabs: true
 
 # Tabs, in display order. A post shows up under a tab when the slug is in
 # its `topics:` front matter; "selected" is the default tab and "all" shows
-# everything.
+# everything. A tab's optional `description` is shown above its list.
 topics:
   - slug: selected
     name: Selected
   - slug: cot-monitorability
     name: CoT Monitorability
+    description: >-
+      Reasoning models think out loud in natural language, which gives us an
+      unusual opportunity to oversee them by reading their chain of thought
+      (CoT). My recent work asks when this kind of monitoring actually works and
+      how to keep it working: formalizing monitorability with information
+      theory, training models whose CoT stays monitorable, detecting
+      steganography and hidden communication, measuring how well models can
+      control their CoT, and getting models to verbalize evaluation awareness.
   - slug: interpretability
     name: Interpretability
+    description: >-
+      I am interested in understanding what algorithms neural networks actually
+      learn, and how reliably we can intervene on them: from mechanistic
+      evidence of planning in model-free RL agents, to the in-context learning
+      algorithms transformers implement, to how well activation steering works
+      in practice.
   - slug: llm-alignment
     name: LLM Alignment
+    description: >-
+      I have worked on the foundations of aligning large language models:
+      mapping open problems in LLM alignment and safety, characterizing the
+      fundamental limitations of RLHF, and mitigating reward model
+      overoptimization with ensembles.
   - slug: rl
     name: RL
+    description: >-
+      Reinforcement learning has been a thread throughout my research: learning
+      constraints from demonstrations, coordinating with novel partners when
+      the problem setting is not common knowledge, mitigating goal
+      misgeneralization, and interpreting how model-free agents plan.
   - slug: governance
     name: Governance
+    description: >-
+      Alongside technical work, I have contributed to governance and
+      sociotechnical questions, such as identifiers for AI systems and a review
+      of the evidence on AI and biorisk.
   - slug: all
     name: All
 

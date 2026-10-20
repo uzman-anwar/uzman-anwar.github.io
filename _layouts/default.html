@@ -8,6 +8,19 @@
 
   <meta name="author" content="{{ site.name }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.description }}">
+
+  <!-- Link previews (X, Slack, LinkedIn, ...) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ site.name }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:url" content="{{ site.url }}/">
+  <meta property="og:image" content="{{ site.url }}/images/headshot.jpg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@usmananwar391">
+
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicon.png">
+  <link rel="apple-touch-icon" href="{{ site.baseurl }}/images/apple-touch-icon.png">
 
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -21,25 +34,27 @@
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tr style="padding:0px">
       <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table class="intro" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr style="padding:0px">
-            <td style="padding:2.5%;width:60%;vertical-align:middle">
+            <td class="intro-text" style="padding:2.5%;width:60%;vertical-align:middle">
               <h1>
                 Usman Anwar
               </h1>
-              <p style="text-align:justify">I am a <strong>final year</strong> PhD student in Computational and Biological Learning lab at Cambridge University, UK. I am broadly interested in AI Safety and Alignment, with my recent focus on <strong>chain-of-thought monitorability</strong>. I am supervised by <a href="https://scholar.google.ca/citations?user=5Uz70IoAAAAJ&hl=en">David Kruger</a> and funded by <a href="https://www.openphilanthropy.org/grants/open-phil-ai-fellowship-2022-class/">Open Phil AI Fellowship</a> and <a href="https://futureoflife.org/team/fellowship-winners-2022/">Vitalik Buterin Fellowship on AI Safety</a>. 
+              <p class="bio" style="text-align:justify">I am a <strong>final year</strong> PhD student in Computational and Biological Learning lab at Cambridge University, UK. I am broadly interested in AI Safety and Alignment, with my recent focus on <strong>chain-of-thought monitorability</strong>. I am supervised by <a href="https://scholar.google.ca/citations?user=5Uz70IoAAAAJ&hl=en">David Krueger</a> and funded by <a href="https://www.openphilanthropy.org/grants/open-phil-ai-fellowship-2022-class/">Open Phil AI Fellowship</a> and <a href="https://futureoflife.org/team/fellowship-winners-2022/">Vitalik Buterin Fellowship on AI Safety</a>. 
               <p style="text-align:center">
                 <a target="_blank" href="https://mailhide.io/e/Mpto2XvD"> Email</a> &nbsp;/&nbsp;
                 <a href="https://github.com/uzman-anwar">GitHub</a> &nbsp;/&nbsp;
                 <a target="_blank" href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=UBAfLyQAAAAJ">Google Scholar</a> &nbsp;/&nbsp;
                 <a href="https://www.linkedin.com/in/uzman-anwar/"> LinkedIn </a> &nbsp;/&nbsp;
+                <a href="https://x.com/usmananwar391">X</a> &nbsp;/&nbsp;
+                <a href="https://www.lesswrong.com/users/usman-anwar">LessWrong</a> &nbsp;/&nbsp;
                 <a href="/pdfs/Usman_Anwar.pdf"> CV  </a>
               </p>
         <!--<p>My research statement on AI Safety is available <a href="/pdfs/Research_Statement_On_AI_Safety.pdf">here</a>.</p>
         <p>My research statement on Systematic Generalization is available <a href="/pdfs/Research_Proposal_Systematic_Generalization.pdf">here</a>.</p> -->
             </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <img style="width:100%;max-width:100%" alt="xyz1 photo" src="images/headshot.jpg">
+            <td class="intro-photo" style="padding:2.5%;width:40%;max-width:40%">
+              <img style="width:100%;max-width:100%" alt="Photo of Usman Anwar" src="images/headshot.jpg">
             </td>
           </tr>
         </table>
@@ -128,6 +143,11 @@
           <button class="topic-tab{% if forloop.first %} active{% endif %}" data-topic="{{ topic.slug }}">{{ topic.name }}</button>
           {% endfor %}
         </div>
+        {% for topic in site.topics %}
+        {% if topic.description %}
+        <p class="topic-description" data-description="{{ topic.slug }}"{% unless forloop.first %} hidden{% endunless %}>{{ topic.description }}</p>
+        {% endif %}
+        {% endfor %}
         {% assign pub_categories = "conference,other,blog" | split: "," %}
         {% else %}
         {% assign pub_categories = "conference" | split: "," %}
@@ -159,36 +179,19 @@
               <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
               <br>
               {% endif %}
-              {% if post.arxiv %}
-              <a href="{{post.arxiv}}">arxiv</a> /
-              {% endif %}
-              {% if post.tweetprint %}
-              <a href="{{post.tweetprint}}">tweetprint</a> /
-              {% endif %}
-              {% if post.blog %}
-              <a href="{{post.blog}}">Blog post</a> /
-              {% endif %}
-              {% if post.codex_analysis %}
-              <a href="{{post.codex_analysis}}">Codex WildChat Analysis</a> /
-              {% endif %}
-              {% if post.pdf %}
-              <a href="{{post.pdf}}">pdf</a> /
-              {% endif %}
-              {% if post.paper %}
-              <a href="{{post.paper}}">paper</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
+              {%- capture links -%}
+              {%- if post.arxiv -%}<a href="{{post.arxiv}}">arxiv</a>;;{%- endif -%}
+              {%- if post.tweetprint -%}<a href="{{post.tweetprint}}">tweetprint</a>;;{%- endif -%}
+              {%- if post.blog -%}<a href="{{post.blog}}">Blog post</a>;;{%- endif -%}
+              {%- if post.codex_analysis -%}<a href="{{post.codex_analysis}}">Codex WildChat Analysis</a>;;{%- endif -%}
+              {%- if post.pdf -%}<a href="{{post.pdf}}">pdf</a>;;{%- endif -%}
+              {%- if post.paper -%}<a href="{{post.paper}}">paper</a>;;{%- endif -%}
+              {%- if post.video -%}<a href="{{post.video}}">video</a>;;{%- endif -%}
+              {%- if post.code -%}<a href="{{post.code}}">code</a>;;{%- endif -%}
+              {%- if post.poster -%}<a href="{{post.poster}}">poster</a>;;{%- endif -%}
+              {%- if post.slides -%}<a href="{{post.slides}}">slides</a>;;{%- endif -%}
+              {%- endcapture %}
+              {{ links | split: ";;" | join: " / " }}
               <p></p>
               {{ post.excerpt }}
             </td>
@@ -386,6 +389,7 @@
       var tabs = Array.prototype.slice.call(document.querySelectorAll('.topic-tab'));
       if (!tabs.length) return;
       var items = Array.prototype.slice.call(document.querySelectorAll('[data-topics]'));
+      var descriptions = Array.prototype.slice.call(document.querySelectorAll('.topic-description'));
       var defaultTopic = tabs[0].dataset.topic;
 
       function show(topic) {
@@ -395,6 +399,9 @@
         items.forEach(function (item) {
           var topics = item.dataset.topics.split(' ');
           item.style.display = (topic === 'all' || topics.indexOf(topic) !== -1) ? '' : 'none';
+        });
+        descriptions.forEach(function (description) {
+          description.hidden = description.dataset.description !== topic;
         });
       }
 
