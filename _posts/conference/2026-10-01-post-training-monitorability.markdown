@@ -3,10 +3,6 @@ layout: post
 title: "Monitorability Is Trainable: Post-Training for Chain-of-Thought Monitorability"
 date: 2026-10-01 09:00:00
 image: /papers/post-training-monitorability/illustration.jpg
-# Temporary: alternative thumbnails shown under the main one while choosing
-image_options:
-  - /papers/post-training-monitorability/option-buff.jpg
-  - /papers/post-training-monitorability/option-tuxedo.jpg
 categories: conference
 topics: [selected, cot-monitorability]
 author: "Usman Anwar"

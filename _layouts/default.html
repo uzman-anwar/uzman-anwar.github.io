@@ -167,12 +167,7 @@
           <tr data-topics="{{ post.topics | join: ' ' }}">
             <td style="padding:2.5%;padding-bottom:0;width:25%;vertical-align:middle;min-width:120px">
               {% if post.image %}
-              {% if post.image_options %}<p class="image-option">Option 1</p>{% endif %}
               <img src="{{post.image}}" alt="project1 image" style="width:auto; height:auto; max-width:100%;" />
-              {% for option in post.image_options %}
-              <p class="image-option">Option {{ forloop.index | plus: 1 }}</p>
-              <img src="{{ option }}" alt="Alternative thumbnail" style="width:auto; height:auto; max-width:100%;" />
-              {% endfor %}
               {% endif %}
             </td>
             <td style="padding:2.5%;padding-bottom:0;width:75%;vertical-align:middle">
