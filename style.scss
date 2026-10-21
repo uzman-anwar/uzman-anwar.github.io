@@ -137,6 +137,22 @@ span.highlight {
   text-align: justify;
 }
 
+/* Sections below the publication list */
+h2.section-heading {
+  display: block;
+  margin-top: 40px;
+}
+
+ul.service {
+  margin: 12px 2.5% 0 2.5%;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+ul.service li {
+  margin-bottom: 4px;
+}
+
 /* Phones: photo above the bio instead of beside it, and no justified text
    (it leaves big gaps between words in narrow columns). The !important
    overrides the inline table styles in default.html. */
