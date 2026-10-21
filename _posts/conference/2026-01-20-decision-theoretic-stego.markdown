@@ -2,7 +2,7 @@
 layout: post
 title: "A Decision-Theoretic Formalisation of Steganography With Applications to LLM Monitoring"
 date:   2026-01-30 14:30:00
-image: /papers/DT-Stego/pic.png
+image: /papers/DT-Stego/illustration.jpg
 categories: conference
 topics: [selected, cot-monitorability]
 author: "Usman Anwar"

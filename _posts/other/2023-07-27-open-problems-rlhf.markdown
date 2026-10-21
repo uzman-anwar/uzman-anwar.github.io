@@ -2,7 +2,7 @@
 layout: post
 title: "Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback"
 date:   2023-07-27 09:00:00
-image: /papers/RLHF-open-problems/figure.png
+image: /papers/RLHF-open-problems/illustration.jpg
 categories: other
 topics: [llm-alignment]
 author: "Usman Anwar"

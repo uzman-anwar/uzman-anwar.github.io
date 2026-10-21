@@ -2,7 +2,7 @@
 layout: post
 title: "Learning to Forget using Hypernetworks"
 date:   2024-12-01 09:00:00
-image: /papers/learning-to-forget/figure.png
+image: /papers/learning-to-forget/illustration.jpg
 categories: other
 author: "Usman Anwar"
 authors: "Jose Miguel Lara Rangel, Stefan Schoepf, Jack Foster, David Krueger, <strong>Usman Anwar</strong>"

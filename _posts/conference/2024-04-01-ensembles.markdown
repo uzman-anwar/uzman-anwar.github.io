@@ -2,7 +2,7 @@
 layout: post
 title:  "Reward Model Ensembles Help Mitigate Overoptimization"
 date:   2024-04-01 14:30:00
-image: /papers/RM-Ensembles/overoptimization.png
+image: /papers/RM-Ensembles/illustration.jpg
 categories: conference
 topics: [selected, llm-alignment]
 author: "Usman Anwar"

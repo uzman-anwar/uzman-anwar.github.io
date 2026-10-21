@@ -2,7 +2,7 @@
 layout: post
 title: "Noisy Zero-Shot Coordination: Breaking The Common Knowledge Assumption In Zero-Shot Coordination Games"
 date:   2024-11-07 09:00:00
-image: /papers/noisy-zsc/figure.png
+image: /papers/noisy-zsc/illustration.jpg
 categories: other
 topics: [rl]
 author: "Usman Anwar"

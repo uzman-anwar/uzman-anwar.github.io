@@ -2,7 +2,7 @@
 layout: post
 title: "Bayesian Methods for Constraint Inference in Reinforcement Learning"
 date:   2022-11-28 14:45:00
-image: /papers/BICRL/image.png
+image: /papers/BICRL/illustration.jpg
 categories: conference
 topics: [selected, rl]
 author: "Usman Anwar"

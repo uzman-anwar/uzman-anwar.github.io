@@ -2,7 +2,7 @@
 layout: post
 title: "GLM-5.1 Has ~Astra Level CoT Control"
 date:   2026-10-19 09:00:00
-image: /images/blog/glm-cot-control.png
+image: /images/blog/glm-cot-control.jpg
 categories: blog
 topics: [selected, cot-monitorability]
 author: "Usman Anwar"

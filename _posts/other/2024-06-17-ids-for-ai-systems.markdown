@@ -2,7 +2,7 @@
 layout: post
 title: "IDs for AI Systems"
 date:   2024-06-17 09:00:00
-image: /papers/IDs-for-AI/figure.png
+image: /papers/IDs-for-AI/illustration.jpg
 categories: other
 topics: [governance]
 author: "Usman Anwar"

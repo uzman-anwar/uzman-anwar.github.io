@@ -2,7 +2,7 @@
 layout: post
 title: "Analyzing and Improving Chain-of-Thought Monitorability Through Information Theory"
 date:   2026-01-15 14:30:00
-image: /papers/improving-cot-monitorability/main-result.png
+image: /papers/improving-cot-monitorability/illustration.jpg
 categories: conference
 topics: [selected, cot-monitorability]
 author: "Usman Anwar"
