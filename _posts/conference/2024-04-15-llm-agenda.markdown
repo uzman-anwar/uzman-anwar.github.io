@@ -7,7 +7,8 @@ categories: conference
 topics: [selected, llm-alignment, governance]
 author: "Usman Anwar"
 authors: "<strong>Usman Anwar</strong> and 41 other authors"
-venue: "Transactions on Machine Learning Research (Survey Certification)"
+venue: "Transactions on Machine Learning Research"
+award: "Survey Certification"
 arxiv: https://arxiv.org/abs/2404.09932
 website: https://llm-safety-challenges.github.io/
 tweetprint: https://x.com/usmananwar391/status/1780254437895713011

@@ -7,7 +7,8 @@ categories: conference
 topics: [selected, interpretability]
 author: "Usman Anwar"
 authors: "<strong>Usman Anwar</strong>, Johannes Von Oswald, Louis Kirsch, David Krueger, Spencer Frei"
-venue: "Transactions on Machine Learning Research (Featured Certification, 2025)"
+venue: "Transactions on Machine Learning Research"
+award: "Featured Certification"
 arxiv: https://arxiv.org/abs/2411.05189
 tweetprint: https://x.com/usmananwar391/status/1856006863906549799
 ---

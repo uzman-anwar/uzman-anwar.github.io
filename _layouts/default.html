@@ -177,7 +177,7 @@
 
               <br>
               {% if post.venue %}
-              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}{% if post.award %} &middot; <strong class="award">{{ post.award }}</strong>{% endif %}
               <br>
               {% endif %}
               {%- capture links -%}

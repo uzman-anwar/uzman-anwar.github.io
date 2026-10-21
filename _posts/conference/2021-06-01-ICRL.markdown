@@ -8,6 +8,7 @@ topics: [selected, rl]
 author: "Usman Anwar"
 authors: "<strong>Usman Anwar*</strong>, Shehryar Malik*, Alireza Aghasi, Ali Ahmed"
 venue: "International Conference on Machine Learning"
+award: "Spotlight"
 arxiv: https://arxiv.org/abs/2011.09999
 slides: /papers/ICRL/slides.pdf
 poster: /papers/ICRL/poster.pdf

@@ -7,7 +7,8 @@ categories: conference
 topics: [selected, interpretability, rl]
 author: "Usman Anwar"
 authors: "<strong>Usman Anwar*</strong>, Thomas Bush*, Stephen Chung, Adria Garriga-Alonso, David Krueger"
-venue: "International Conference on Learning Representations (ICLR 2025), Oral"
+venue: "International Conference on Learning Representations"
+award: "Oral"
 arxiv: https://arxiv.org/abs/2504.01871
 tweetprint: https://x.com/_tom_bush/status/1907778475043266776
 ---
