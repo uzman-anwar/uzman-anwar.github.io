@@ -4,7 +4,7 @@ title: "Interpreting Emergent Planning in Model-Free Reinforcement Learning"
 date:   2025-04-02 14:30:00
 image: /papers/interpreting-emergent-planning/figure.jpg
 categories: conference
-topics: [selected, interpretability, rl]
+topics: [selected, science-of-dl, rl]
 author: "Usman Anwar"
 authors: "<strong>Usman Anwar*</strong>, Thomas Bush*, Stephen Chung, Adria Garriga-Alonso, David Krueger"
 venue: "International Conference on Learning Representations"

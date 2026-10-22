@@ -36,14 +36,15 @@ topics:
       verbalize evaluation awareness, I have shown how to improve
       monitorability of known misbehaviors when they may not necessarily have
       a causal influence on the model's behavior.
-  - slug: interpretability
-    name: Interpretability
+  - slug: science-of-dl
+    name: Science of Deep Learning
     description: >-
-      I am interested in understanding what algorithms neural networks actually
-      learn, and how reliably we can intervene on them: from mechanistic
-      evidence of planning in model-free RL agents, to the in-context learning
-      algorithms transformers implement, to how well activation steering works
-      in practice.
+      I am interested in understanding what neural networks actually learn and
+      how reliably we can intervene on them. I have provided mechanistic
+      evidence that model-free RL agents learn to plan using implicit world
+      models, shown that the in-context learning algorithms transformers learn
+      are not adversarially robust and do not match classical algorithms, and
+      examined how well activation steering works in practice.
   - slug: rl
     name: RL
     description: >-

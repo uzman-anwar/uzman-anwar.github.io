@@ -4,7 +4,7 @@ title: "Comparing Bottom-Up and Top-Down Steering Approaches on In-Context Learn
 date:   2024-11-11 09:00:00
 image: /papers/steering-comparison/figure.png
 categories: other
-topics: [interpretability]
+topics: [science-of-dl]
 author: "Usman Anwar"
 authors: "Madeline Brumley, Joe Kwon, David Krueger, Dmitrii Krasheninnikov, <strong>Usman Anwar</strong>"
 arxiv: https://arxiv.org/abs/2411.07213
