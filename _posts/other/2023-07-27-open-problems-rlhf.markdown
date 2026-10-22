@@ -4,7 +4,7 @@ title: "Open Problems and Fundamental Limitations of Reinforcement Learning from
 date:   2023-07-27 09:00:00
 image: /papers/RLHF-open-problems/figure.png
 categories: other
-topics: [llm-alignment]
+topics: [rl]
 author: "Usman Anwar"
 authors: "Stephen Casper and 31 other authors, including <strong>Usman Anwar</strong>"
 venue: "Transactions on Machine Learning Research"

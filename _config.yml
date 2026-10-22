@@ -44,20 +44,24 @@ topics:
       evidence of planning in model-free RL agents, to the in-context learning
       algorithms transformers implement, to how well activation steering works
       in practice.
-  - slug: llm-alignment
-    name: LLM Alignment
-    description: >-
-      I have worked on the foundations of aligning large language models:
-      mapping open problems in LLM alignment and safety, characterizing the
-      fundamental limitations of RLHF, and mitigating reward model
-      overoptimization with ensembles.
   - slug: rl
     name: RL
     description: >-
-      Reinforcement learning has been a thread throughout my research: learning
-      constraints from demonstrations, coordinating with novel partners when
-      the problem setting is not common knowledge, mitigating goal
-      misgeneralization, and interpreting how model-free agents plan.
+      A constant thread in my work is how to improve the robustness of
+      reinforcement learning methods, especially from the perspective of
+      mitigating reward hacking. Towards that end, I have investigated multiple
+      solutions: (a) mitigating harms from misspecified rewards by learning
+      complementary constraints from human demonstrations, (b) using ensembles
+      of reward models to regularize the learned policy and mitigate
+      overoptimization, (c) using CoT monitoring and a mutual-information-based
+      regularizer to mitigate reward hacking while ensuring models do not
+      obfuscate their CoT, and (d) using regret-based optimization techniques
+      to mitigate goal misgeneralization in RL agents. Separately, I have worked
+      on interpreting reinforcement learning agents and shown that model-free
+      RL agents model their environment and use that model to plan their
+      actions. Finally, I have used reinforcement-learning-based methods to
+      improve the monitorability of known behaviors, focusing on evaluation
+      awareness.
   - slug: governance
     name: Governance
     description: >-
