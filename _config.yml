@@ -28,13 +28,14 @@ topics:
   - slug: cot-monitorability
     name: CoT Monitorability
     description: >-
-      Reasoning models think out loud in natural language, which gives us an
-      unusual opportunity to oversee them by reading their chain of thought
-      (CoT). My recent work asks when this kind of monitoring actually works and
-      how to keep it working: formalizing monitorability with information
-      theory, training models whose CoT stays monitorable, detecting
-      steganography and hidden communication, measuring how well models can
-      control their CoT, and getting models to verbalize evaluation awareness.
+      CoT monitorability is a really vital tool in assuring agents act safely;
+      however, it is also extremely fragile. My work on this topic has focused
+      on how we can prevent CoT obfuscation from developing during training,
+      how CoT monitorability can be improved via post-training and how we can
+      detect encoded reasoning in LLMs. In orthogonal work on training LLMs to
+      verbalize evaluation awareness, I have shown how to improve
+      monitorability of known misbehaviors when they may not necessarily have
+      a causal influence on the model's behavior.
   - slug: interpretability
     name: Interpretability
     description: >-
