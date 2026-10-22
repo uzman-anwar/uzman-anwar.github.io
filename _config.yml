@@ -43,8 +43,9 @@ topics:
       how reliably we can intervene on them. I have provided mechanistic
       evidence that model-free RL agents learn to plan using implicit world
       models, shown that the in-context learning algorithms transformers learn
-      are not adversarially robust and do not match classical algorithms, and
-      examined how well activation steering works in practice.
+      are not adversarially robust and do not match classical algorithms,
+      characterized when chain-of-thought monitors fail using information
+      theory, and examined how well activation steering works in practice.
   - slug: rl
     name: RL
     description: >-

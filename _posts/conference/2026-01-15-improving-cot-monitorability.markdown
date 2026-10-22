@@ -4,7 +4,7 @@ title: "Analyzing and Improving Chain-of-Thought Monitorability Through Informat
 date:   2026-01-15 14:30:00
 image: /papers/improving-cot-monitorability/illustration.jpg
 categories: conference
-topics: [selected, cot-monitorability, rl]
+topics: [selected, cot-monitorability, science-of-dl, rl]
 author: "Usman Anwar"
 authors: "<strong>Usman Anwar*</strong>, Tim Bakker*, Dana Kianfar, Cristina Pinneri, Christos Louizos"
 arxiv: https://arxiv.org/abs/2602.18297
