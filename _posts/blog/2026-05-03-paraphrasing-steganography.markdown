@@ -4,7 +4,7 @@ title: "Paraphrasing Is (At Best) a Partial Defence Against Steganography in LLM
 date:   2026-05-03 09:00:00
 image: /images/blog/paraphrasing-steganography.jpg
 categories: blog
-topics: [selected, cot-monitorability]
+topics: [cot-monitorability]
 author: "Usman Anwar"
 authors: "<strong>Usman Anwar</strong>, Robert Krzyzanowski"
 venue: "LessWrong"

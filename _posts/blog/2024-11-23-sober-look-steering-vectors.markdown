@@ -4,7 +4,7 @@ title: "A Sober Look at Steering Vectors for LLMs"
 date:   2024-11-23 09:00:00
 image: /images/blog/steering-vectors.jpg
 categories: blog
-topics: [selected, science-of-dl]
+topics: [science-of-dl]
 author: "Usman Anwar"
 authors: "Joschka Braun, Dmitrii Krasheninnikov, <strong>Usman Anwar</strong>, Robert Kirk, Daniel Tan, David Krueger"
 venue: "LessWrong"
